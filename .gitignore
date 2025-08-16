@@ -1,0 +1,48 @@
+cat > .gitignore << 'EOF'
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.pkl
+*.log
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Environments ---
+.venv/
+.venv311/
+venv/
+ENV/
+env/
+.Python
+
+# --- Build/Dist ---
+build/
+dist/
+*.egg-info/
+
+# --- IDE/OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Data (keep datasets out of repo) ---
+data/
+data_sources/
+
+# --- Weights & Artifacts ---
+weights/*.pt
+*.pt
+*.onnx
+*.pth
+
+# Allow small metadata inside weights
+!weights/class_names.json
+
+# --- Misc ---
+*.tmp
+EOF

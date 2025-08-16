@@ -1,0 +1,8 @@
+torch
+torchvision
+numpy
+pillow
+scikit-image
+pytorch-grad-cam>=1.5.2
+lime
+streamlit>=1.36
